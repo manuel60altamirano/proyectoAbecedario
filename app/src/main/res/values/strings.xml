@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ANDROIDGIT</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="ventana">Activity 1</string>
 </resources>
