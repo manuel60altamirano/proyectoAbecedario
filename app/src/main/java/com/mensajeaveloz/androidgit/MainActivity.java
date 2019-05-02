@@ -32,14 +32,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         usuarioCodigo = (TextView) findViewById(R.id.codigo);
 
         try {
-            // Tomando JSONObject from JSON file
+            // Tomando JSONObject desde JSON archivo
             JSONObject obj = new JSONObject(JSON_STRING);
-            // fetch JSONObject named employee
             JSONObject usuario = obj.getJSONObject("usuario");
-            // get employee name and salary
-            name = usuario.getString("nombre");
-            salary = usuario.getString("codigo");
-            // set employee name and salary in TextView's
+            // poner nombre usuario y codigo
+            usuario = usuario.getString("nombre");
+            codigo = usuario.getString("codigo");
+            // poner nombre y codigo en el  TextView's
             usuarioNombre.setText("Nombre: "+nombre);
             usuarioCodigo.setText("Codigo: "+codigo);
 
@@ -47,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             e.printStackTrace();
         }
         //codigo json usuario
+        // Botonoes codigo
         boton=(Button) findViewById(R.id.button);
         boton.setOnClickListener(this);
 
