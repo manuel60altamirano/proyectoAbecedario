@@ -1,5 +1,6 @@
 package com.mensajeaveloz.androidgit;
-
+/*Pantalla Numeros proyecto programacion Movil */
+/*Creado por Carlos Almaraz Escobar*/
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -118,6 +119,8 @@ public class Numeros extends AppCompatActivity {
             public void onClick(View view) {
                 mp10.start();
                 con10.setImageResource(R.drawable.mg10);
+                /*Pantalla Numeros proyecto programacion Movil */
+                /*Creado por Carlos Almaraz Escobar*/
               }
         });
     }
