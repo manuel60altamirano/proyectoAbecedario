@@ -62,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
                         if(i==0)
                         {
                             //intent a letras
-                           /* Intent intent = new Intent(MainActivity.this, Numeros.class);
-                            startActivity(intent);*/
+                            Intent intent = new Intent(MainActivity.this, Alfabeto.class);
+                            startActivity(intent);
                         }
                         if(i==2)
                         {
