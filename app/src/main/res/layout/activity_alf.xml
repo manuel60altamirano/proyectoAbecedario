@@ -8,11 +8,12 @@
     tools:context=".Alfabeto">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="386dp"
+        android:layout_height="642dp"
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="9dp">
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="5dp">
         <!--Jhonatan Jhimy Condori Apaza-->
         <LinearLayout
             android:id="@+id/img"
@@ -30,7 +31,7 @@
         <LinearLayout
             android:id="@+id/body"
             android:layout_width="match_parent"
-            android:layout_height="210dp"
+            android:layout_height="228dp"
             android:orientation="horizontal">
 
             <TextView
@@ -48,8 +49,8 @@
                 android:id="@+id/min"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="#0000ff"
                 android:layout_weight="1"
+                android:background="#0000ff"
                 android:fontFamily="cursive"
                 android:gravity="center"
                 android:textColor="#ffffff"
@@ -73,7 +74,7 @@
             <TextView
                 android:id="@+id/nom"
                 android:layout_width="234dp"
-                android:layout_height="59dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"

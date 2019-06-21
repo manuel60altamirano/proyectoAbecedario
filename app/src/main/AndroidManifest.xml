@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Numeros" />
+        <activity android:name=".Alfabeto"/>
         <activity android:name=".Sentidos"/>
         <activity android:name=".MainActivity">
 
