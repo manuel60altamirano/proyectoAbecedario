@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_abc"
+    tools:context=".Alfabeto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp">
+        <!--Jhonatan Jhimy Condori Apaza-->
+        <LinearLayout
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="291dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/arbol" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/may"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0000ff"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="35pt" />
+
+            <TextView
+                android:id="@+id/min"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#0000ff"
+                android:layout_weight="1"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="35pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/atr"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/previous_hover"
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/nom"
+                android:layout_width="234dp"
+                android:layout_height="59dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="#ffff00"
+                android:textSize="17pt" />
+
+            <Button
+                android:id="@+id/ade"
+                android:layout_width="41dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/next_hover"
+                android:textSize="12pt" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
