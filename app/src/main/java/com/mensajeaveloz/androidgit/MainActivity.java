@@ -1,31 +1,55 @@
 package com.mensajeaveloz.androidgit;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button boton;
+import com.hitomi.cmlibrary.CircleMenu;
+import com.hitomi.cmlibrary.OnMenuSelectedListener;
+//Menu integrando CircleMenu creado por
+//Luis Esteban Arteaga Vargas
+//Anahi Quisbert Canaviri
+public class MainActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        boton=(Button) findViewById(R.id.button);
-        boton.setOnClickListener(this);
-    }
+        CircleMenu circleMenu = findViewById(R.id.circlemenu);
+        final String[] menus={
+                "LETRAS",
+                "NUMEROS",
+                "SENTIDOS"
+        };
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.button:
-                Intent intent = new Intent(this,Main2Activity.class);
-                startActivity(intent);
-                break;
+        circleMenu.setMainMenu(Color.parseColor("#CDCDCD"), R.drawable.ic_action_name, R.drawable.ic_cancel)
+                .addSubMenu(Color.parseColor("#258CFF"), R.drawable.adcd)
+                .addSubMenu(Color.parseColor("#30A400"), R.drawable.num)
+                .addSubMenu(Color.parseColor("#FF4B32"), R.mipmap.ic_sentidos)
+                .setOnMenuSelectedListener(new OnMenuSelectedListener() {
+                    @Override
+                    public void onMenuSelected(int i) {
 
-             default:
-                 break;
-        }
+                        if(i==1)
+                        {
+                            Intent intent = new Intent(MainActivity.this, Numeros.class);
+                            startActivity(intent);
+                        }
+                        if(i==0)
+                        {
+                            //intent a letras
+                           /* Intent intent = new Intent(MainActivity.this, Numeros.class);
+                            startActivity(intent);*/
+                        }
+                        if(i==2)
+                        {
+                            //intent a sentidos
+                           /* Intent intent = new Intent(MainActivity.this, Numeros.class);
+                            startActivity(intent);*/
+                        }
+                    }
+                });
     }
 }
